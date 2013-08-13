@@ -1,0 +1,60 @@
+(El Archivo vimrc esta en /etc/vim/vimrc )
+
+--> Configurar teclado al español setxkbmap -layout 'es,es' -model pc105 
+
+######----> Mi Indentacion favorita <----########
+incluir en vimrc estas lineas:
+set autoindent
+set smartindent
+set softtabstop=3
+set shiftwidth=3
+set tabstop=3
+
+######----> Compilar y ejecutar desde VIM  <----########
+F4 Compilar
+F5 Ejecutar
+Incluir en vimrc estas lineas:
+
+map <F4> : call CompileGcc()<CR>
+func! CompileGcc()
+  exec "w"
+  exec "!gcc % -o %<"
+endfunc
+ 
+map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  exec "!gcc % -o %<"
+  exec "! ./%<"
+endfunc
+
+######----> Cambiar Tema de Vim <----########
+1- crear una carpeta .vim si no esta creada
+	mkdir ~/.vim
+	mkdir ~/.vim/colors
+
+2- escoger el tema a instalar en:
+	http://bytefluent.com/vivify/
+
+3- Lo descargamos y lo movemos o copiamos a la carpeta de colors,con nautilus,dolphin,etc o con terminal: 
+	mv ~/Descargar/nombre_del_tema ~/.vim/colors
+
+4-Abrimos vimrc 
+	sudo nano /etc/vim/vimrc
+	buscamos "syntax on" y lo sustituimos por
+		syntax enable 
+		colorscheme nombre_del_tema(sin .vim)
+	Lo guardamos y listo 
+
+················································································
+
+######----> Instalar pathogen.vim <----########
+Sirve para instalar plugins de manera facil.
+
+1-Sigue las instrucciones de: 
+	http://github.com/tpope/vim-pathogen
+
+················································································
+
+######----> Lista de Plugins <----########
+	1- Code Complete
