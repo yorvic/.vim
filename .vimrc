@@ -7,9 +7,9 @@ execute pathogen#infect()
 set cindent
 set autoindent
 set smartindent
-set softtabstop=3
-set shiftwidth=3
-set tabstop=3
+set softtabstop=4
+set shiftwidth=4
+set tabstop=4
 set nu 
 
 map <F4> : call CompileGcc()<CR>
@@ -26,3 +26,4 @@ func! CompileRunGcc()
 endfunc
 
 set pastetoggle=<F12>
+map <F6> :w<CR>:!python % <CR>
