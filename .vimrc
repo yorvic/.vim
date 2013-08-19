@@ -12,10 +12,11 @@ set shiftwidth=4
 set tabstop=4
 set nu 
 
-map <F4> : call CompileGcc()<CR>
-func! CompileGcc()
+map <F4> : call CompileCplusplus()<CR>
+func! CompileCplusplus()
   exec "w"
-  exec "!gcc % -o %<"
+  exec "!g++ % -o %<"
+  exec "! ./%<"
 endfunc
  
 map <F5> :call CompileRunGcc()<CR>
