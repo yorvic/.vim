@@ -1,0 +1,5 @@
+// Crear repositorio
+git init
+
+//conectarse con el repositorio 
+git remote add origin https://github.com/user/repo.git
