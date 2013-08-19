@@ -27,3 +27,5 @@ endfunc
 
 set pastetoggle=<F12>
 map <F6> :w<CR>:!python % <CR>
+map <F3> :TlistToggle<cr>
+map <F2> :NERDTreeToggle<cr>
