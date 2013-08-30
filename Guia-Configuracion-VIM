@@ -1,3 +1,5 @@
+Instalar Ctags -> sudo apt-get install ctags
+
 (El Archivo vimrc esta en /etc/vim/vimrc )
 
 --> Configurar teclado al español setxkbmap -layout 'es,es' -model pc105 
