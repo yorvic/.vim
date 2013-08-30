@@ -4,6 +4,10 @@ if has("syntax")
 endif
 
 execute pathogen#infect()
+set incsearch
+set ignorecase
+set smartcase
+set mouse=a
 set cindent
 set autoindent
 set smartindent
