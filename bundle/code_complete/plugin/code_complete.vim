@@ -243,7 +243,7 @@ endfunction
 " C templates
 let g:template = {}
 let g:template['c'] = {}
-let g:template['c']['plan']="/* Yorvic Godoy\<cr>Descripcion:".g:rs."...".g:re." */\<cr>/*========================<Bibliotecas>=========================*/\<cr>#include <stdio.h>\<cr>#include <stdlib.h>\<cr>#include <math.h>\<cr>/*========================< Constantes >========================*/\<cr>".g:rs."...".g:re."\<cr>/*========================< Prototipos >========================*/\<cr>".g:rs."...".g:re."\<cr>/*========================<Funcion Main>========================*/\<cr>int main(){\<cr>".g:rs."...".g:re."\<cr>\<left>return 0;\<cr>}"
+let g:template['c']['plan']="/* Yorvic Godoy\<cr>Descripcion:".g:rs."...".g:re." */\<cr>/*========================<Bibliotecas>=========================*/\<cr>#include <stdio.h>\<cr>#include <stdlib.h>\<cr>#include <math.h>\<cr>/*========================< Constantes >========================*/\<cr>\<cr>/*========================< Prototipos >========================*/\<cr>\<cr>/*========================<Funcion Main>========================*/\<cr>int main(){\<cr>\<cr>return 0;\<cr>}"
 let g:template['c']['lin']="/*========================<".g:rs."...".g:re.">========================*/"
 let g:template['c']['pfun'] = "".g:rs."...".g:re." ".g:rs."...".g:re." (".g:rs."...".g:re.");"
 let g:template['c']['lfun'] = "".g:rs."...".g:re."(".g:rs."...".g:re.");"
