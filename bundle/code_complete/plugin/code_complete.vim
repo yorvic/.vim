@@ -243,7 +243,7 @@ endfunction
 " C templates
 let g:template = {}
 let g:template['c'] = {}
-let g:template['c']['plan']="/* Yorvic Godoy\<cr>Descripcion:".g:rs."...".g:re." */\<cr>/*========================<Bibliotecas>=========================*/\<cr>#include <stdio.h>\<cr>#include <stdlib.h>\<cr>#include <math.h>\<cr>/*========================< Constantes >========================*/\<cr>\<cr>/*========================< Prototipos >========================*/\<cr>\<cr>/*========================<Funcion Main>========================*/\<cr>int main(){\<cr>\<cr>return 0;\<cr>}"
+let g:template['c']['plan']="/* Yorvic Godoy\<cr>Descripcion:".g:rs."...".g:re." */\<cr>/*========================<Bibliotecas>=========================*/\<cr>#include <stdio.h>\<cr>#include <stdlib.h>\<cr>#include <math.h>\<cr>/*========================< Constantes >========================*/\<cr>\<cr>/*===========================< Tipos >==========================*/\<cr>\<cr>/*========================< Prototipos >========================*/\<cr>\<cr>/*========================<Funcion Main>========================*/\<cr>int main(){\<cr>\<cr>return 0;\<cr>}"
 let g:template['c']['lin']="/*========================<".g:rs."...".g:re.">========================*/"
 let g:template['c']['pfun'] = "".g:rs."...".g:re." ".g:rs."...".g:re." (".g:rs."...".g:re.");"
 let g:template['c']['lfun'] = "".g:rs."...".g:re."(".g:rs."...".g:re.");"
@@ -256,6 +256,8 @@ let g:template['c']['cd'] = "/**<  */\<left>\<left>\<left>"
 let g:template['c']['de'] = "#define	".g:rs."...".g:re."	".g:rs."...".g:re.""
 let g:template['c']['pri'] = "printf(\"".g:rs."...".g:re."\");"
 let g:template['c']['sca'] = "scanf(\"%".g:rs."...".g:re."\",".g:rs."...".g:re.");"
+let g:template['c']['fsca'] = "fscanf(".g:rs."...".g:re.",\"%".g:rs."...".g:re."\",".g:rs."...".g:re.");"
+let g:template['c']['fpri'] = "fprintf(".g:rs."...".g:re.",\"".g:rs."...".g:re."\");"
 let g:template['c']['in'] = "#include    \"\"\<left>"
 let g:template['c']['is'] = "#include  <>\<left>"
 let g:template['c']['ff'] = "#ifndef  \<c-r>=GetFileName()\<cr>\<CR>#define  \<c-r>=GetFileName()\<cr>".
@@ -269,6 +271,8 @@ let g:template['c']['if'] = "if( ".g:rs."...".g:re." ){\<cr>".g:rs."...".g:re."\
 let g:template['c']['while'] = "while(".g:rs."...".g:re."){\<cr>".g:rs."...".g:re."\<cr>}"
 let g:template['c']['ife'] = "if( ".g:rs."...".g:re." ){\<cr>".g:rs."...".g:re."\<cr>}\<cr>else{\<cr>".g:rs."...".
             \g:re."\<cr>}"
+" ---------------------------------------------
+let g:template['c']['typedefs'] = "typedef struct{\<cr>".g:rs."...".g:re.";\<cr>".g:rs."...".g:re.";\<cr>}".g:rs."...".g:re.";"
 
 " ---------------------------------------------
 " C++ templates
